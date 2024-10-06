@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+In this assignment we will be building traffic lights in order to practice using react state.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Let's get this show on the road! ( pun intended )
 
-## Available Scripts
+| 🔴 | 🔴 |
 
-In the project directory, you can run:
+| 🟡 | 🟡 |
 
-### `npm start`
+| 🟢 | 🟢 |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Learning Objectives
+In order to complete this assignment, a student should be able to...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+work with state inside of a single isolated component
+use onClick handlers to trigger state changes
+understand what state is and why we use it
+use conditional rendering
+In order to pass this assignment you should
+Note: You can copy and paste these checklists into your new repository and fill them out to make sure that you solved everything we are asking for
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Standard Requirements
+[] Setup eslint
+[] Pass all linting checks
+To check if linting passes, run npm run lint
+[] Format code with prettier
+[] State should not be duplicated
+[] Variables should be named logicially
+[] No unneccessary console logs
+[] No commented out blocks of code (Code comments are fine)
+[] Setup a github repository with your submission as the main branch, you will submit a link to this for grading (NOT A ZIP FILE)
+Assignment Specific Requirements
+[] The state of a traffic light should go in the following order and repeat indefinitely
+Red, Green, Yellow
+If the color is red, and you click nextState, the light should change to green
+If the color is green, and you click nextState, the light should change to yellow
+If the color is yellow, and you click nextState, the light should change to red
+[] The correct circle should correspond with the correct position
+red light should be the top light
+yellow light should be the middle light
+green light should be the bottom light
+[] Next State button should go to the next state on the functional traffic light
+[] Next State button should go to the next state on the class based traffic light
